@@ -1,0 +1,52 @@
+<div style="height: 200vh;">
+
+
+  <ps-table [columns]="columns" [displayData]="displayData" [pesquisar]="pesquisar" [title]="title" [count]="count"
+    (check)="check($event)" [loading]="loadingTable" />
+
+  <!-- <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button> --> -->
+  <nz-modal [nzVisible]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <ng-container *nzModalContent>
+      <form class="form" [formGroup]="formPermissao" nz-form>
+        <div nz-row [nzGutter]=[16,0]>
+          <!-- <div nz-col nzSpan="11">
+            <nz-form-item class="form-item">
+              <nz-form-label class="form-item-label" nzSpan="24" nzRequired>Nome</nz-form-label>
+              <nz-form-control nzSpan="24">
+                <input nz-input placeholder="id" formControlName="id" type="text">
+              </nz-form-control>
+            </nz-form-item>
+
+          </div> -->
+          <div nz-col nzSpan="9">
+            <nz-form-item class="form-item">
+              <nz-form-label class="form-item-label" nzSpan="24" nzRequired>Nome</nz-form-label>
+              <nz-form-control nzSpan="24">
+                <input nz-input placeholder="nome" formControlName="username" type="text">
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+
+          <div nz-col nzSpan="4">
+            <nz-form-item>
+              <nz-form-label class="form-item-label" nzSpan="24" nzRequired>adm</nz-form-label>
+              <input nz-input placeholder="permissao" formControlName="adm" type="text">
+            </nz-form-item>
+          </div>
+
+        </div>
+      </form>
+    </ng-container>
+  </nz-modal>
+
+
+
+  <!-- <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button> -->
+
+
+  <ps-fab-button [actions]="fabButton" />
+
+
+
+
+</div>

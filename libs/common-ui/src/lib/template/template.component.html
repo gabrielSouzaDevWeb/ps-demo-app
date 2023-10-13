@@ -1,0 +1,21 @@
+<nz-layout>
+  <nz-sider class="aside" nzCollapsible #nzSider nzWidth="200px">
+    <gs-side-menu [isCollapsed]="isCollapsed" [sideMenu]="sideMenu" />
+  </nz-sider>
+  <nz-layout>
+    <nz-header class="header" [ngClass]="{'is_collapsed':isCollapsed,'isnot_collapsed':!isCollapsed}">
+      <gs-header [title]="title" />
+    </nz-header>
+    <div class="header-space"></div>
+    <nz-content>
+      <nz-breadcrumb [ngClass]="{'is_collapsed':isCollapsed,'isnot_collapsed':!isCollapsed}">
+        <nz-breadcrumb-item>User</nz-breadcrumb-item>
+        <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
+      </nz-breadcrumb>
+      <div class="inner-content " [ngClass]="{'is_collapsed':isCollapsed,'isnot_collapsed':!isCollapsed}">
+        <ng-content></ng-content>
+      </div>
+    </nz-content>
+    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+  </nz-layout>
+</nz-layout>

@@ -19,7 +19,7 @@
           "apps/ps-demo-app/src/favicon.ico",
           "apps/ps-demo-app/src/assets"
         ],
-        "styles": ["apps/ps-demo-app/src/styles.scss"],
+        "styles": ["node_modules/ng-zorro-antd/ng-zorro-antd.min.css"],
         "scripts": []
       },
       "configurations": {

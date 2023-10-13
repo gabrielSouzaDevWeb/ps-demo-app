@@ -1,0 +1,9 @@
+{
+  "permissoes": [
+    {
+      "publicId": 1,
+      "username": "usuarioteste",
+      "adm": true
+    }
+  ]
+}

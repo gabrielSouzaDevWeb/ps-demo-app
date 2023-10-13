@@ -1,0 +1,20 @@
+<div class="logo"></div>
+<ul nz-menu #nzMenu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+  <ng-container *ngFor="let menu of sideMenu">
+    <li *ngIf="menu.children.length === 0 " nz-menu-item nzMatchRouter>
+      <a [routerLink]="menu.router"><span nz-icon [nzType]="menu.icon"
+          nzTheme="outline"></span>&nbsp;&nbsp;{{isCollapsed?"":menu.title}}</a>
+    </li>
+    <li *ngIf="menu.children.length !== 0 " nz-submenu nzOpen [nzTitle]="menu.title" [nzIcon]="menu.icon">
+      <ul>
+        <ng-container *ngFor="let subMenu of menu.children">
+          <li nz-menu-item nzMatchRouter>
+            <a [routerLink]="subMenu.router"><span nz-icon [nzType]="subMenu.icon"
+                nzTheme="outline"></span>&nbsp;&nbsp;{{subMenu.title}}</a>
+          </li>
+        </ng-container>
+      </ul>
+    </li>
+  </ng-container>
+
+</ul>

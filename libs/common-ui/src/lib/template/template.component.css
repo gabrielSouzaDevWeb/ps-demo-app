@@ -1,0 +1,77 @@
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.aside {
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+.header-space {
+  height: 32px;
+  margin: 16px;
+}
+
+nz-header {
+  background: #fff;
+  padding: 0;
+}
+
+nz-content {
+  margin: 0 16px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner-content {
+  /*TODO: reponsividade*/
+
+  padding: 24px;
+  background: #fff;
+  min-height: 80vh;
+  height: 200vh;
+}
+
+.isnot_collapsed {
+  margin-left: 13.8em;
+  animation-name: collapse;
+  animation-duration: 0.2s;
+}
+.is_collapsed {
+  margin-left: 5em;
+  animation-name: uncollapse;
+  animation-duration: 0.2s;
+}
+
+@keyframes collapse {
+  to {
+    margin-left: 13.8em;
+  }
+
+  from {
+    margin-left: 5em;
+  }
+}
+@keyframes uncollapse {
+  to {
+    margin-left: 5em;
+  }
+
+  from {
+    margin-left: 13.8em;
+  }
+}
+
+nz-footer {
+  text-align: center;
+}

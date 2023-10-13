@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ps-demo-app/api": ["libs/api/src/index.ts"],
+      "@ps-demo-app/common-ui": ["libs/common-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

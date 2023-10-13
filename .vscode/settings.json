@@ -1,0 +1,7 @@
+{
+  "material-icon-theme.activeIconPack": "angular",
+  "material-icon-theme.files.associations": {
+    "*-api.service.ts": "Ngrx-entity",
+    "*.state.ts": "Ngrx-state"
+  }
+}

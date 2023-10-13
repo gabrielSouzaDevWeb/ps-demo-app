@@ -1,0 +1,757 @@
+@keyframes rotateBtn {
+  from {
+    transform: rotate(0deg) scale(1.3);
+  }
+  to {
+    transform: rotate(225deg) scale(1.3);
+  }
+}
+@keyframes desRotateBtn {
+  from {
+    transform: rotate(225deg) scale(1.3);
+    display: block;
+  }
+  to {
+    transform: rotate(0deg) scale(1.3);
+    display: block;
+  }
+}
+.fab {
+  transform: scale(1.3);
+  position: fixed;
+  z-index: 999999;
+}
+.fab__principal {
+  animation-name: desRotateBtn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  bottom: 36px;
+  right: 36px;
+}
+.fab__principal--clicked {
+  animation-name: rotateBtn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  bottom: 36px;
+  right: 36px;
+}
+@keyframes grow-1 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 94px;
+  }
+}
+@keyframes shrink-1 {
+  from {
+    display: block;
+    bottom: 94px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(1) {
+  animation-name: grow-1;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(1) {
+  animation-name: shrink-1;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-2 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 141px;
+  }
+}
+@keyframes shrink-2 {
+  from {
+    display: block;
+    bottom: 141px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(2) {
+  animation-name: grow-2;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(2) {
+  animation-name: shrink-2;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-3 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 188px;
+  }
+}
+@keyframes shrink-3 {
+  from {
+    display: block;
+    bottom: 188px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(3) {
+  animation-name: grow-3;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(3) {
+  animation-name: shrink-3;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-4 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 235px;
+  }
+}
+@keyframes shrink-4 {
+  from {
+    display: block;
+    bottom: 235px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(4) {
+  animation-name: grow-4;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(4) {
+  animation-name: shrink-4;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-5 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 282px;
+  }
+}
+@keyframes shrink-5 {
+  from {
+    display: block;
+    bottom: 282px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(5) {
+  animation-name: grow-5;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(5) {
+  animation-name: shrink-5;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-6 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 329px;
+  }
+}
+@keyframes shrink-6 {
+  from {
+    display: block;
+    bottom: 329px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(6) {
+  animation-name: grow-6;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(6) {
+  animation-name: shrink-6;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-7 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 376px;
+  }
+}
+@keyframes shrink-7 {
+  from {
+    display: block;
+    bottom: 376px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(7) {
+  animation-name: grow-7;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(7) {
+  animation-name: shrink-7;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-8 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 423px;
+  }
+}
+@keyframes shrink-8 {
+  from {
+    display: block;
+    bottom: 423px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(8) {
+  animation-name: grow-8;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(8) {
+  animation-name: shrink-8;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-9 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 470px;
+  }
+}
+@keyframes shrink-9 {
+  from {
+    display: block;
+    bottom: 470px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(9) {
+  animation-name: grow-9;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(9) {
+  animation-name: shrink-9;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-10 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 517px;
+  }
+}
+@keyframes shrink-10 {
+  from {
+    display: block;
+    bottom: 517px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(10) {
+  animation-name: grow-10;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(10) {
+  animation-name: shrink-10;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-11 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 564px;
+  }
+}
+@keyframes shrink-11 {
+  from {
+    display: block;
+    bottom: 564px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(11) {
+  animation-name: grow-11;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(11) {
+  animation-name: shrink-11;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-12 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 611px;
+  }
+}
+@keyframes shrink-12 {
+  from {
+    display: block;
+    bottom: 611px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(12) {
+  animation-name: grow-12;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(12) {
+  animation-name: shrink-12;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-13 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 658px;
+  }
+}
+@keyframes shrink-13 {
+  from {
+    display: block;
+    bottom: 658px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(13) {
+  animation-name: grow-13;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(13) {
+  animation-name: shrink-13;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-14 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 705px;
+  }
+}
+@keyframes shrink-14 {
+  from {
+    display: block;
+    bottom: 705px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(14) {
+  animation-name: grow-14;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(14) {
+  animation-name: shrink-14;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-15 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 752px;
+  }
+}
+@keyframes shrink-15 {
+  from {
+    display: block;
+    bottom: 752px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(15) {
+  animation-name: grow-15;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(15) {
+  animation-name: shrink-15;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-16 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 799px;
+  }
+}
+@keyframes shrink-16 {
+  from {
+    display: block;
+    bottom: 799px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(16) {
+  animation-name: grow-16;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(16) {
+  animation-name: shrink-16;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-17 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 846px;
+  }
+}
+@keyframes shrink-17 {
+  from {
+    display: block;
+    bottom: 846px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(17) {
+  animation-name: grow-17;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(17) {
+  animation-name: shrink-17;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-18 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 893px;
+  }
+}
+@keyframes shrink-18 {
+  from {
+    display: block;
+    bottom: 893px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(18) {
+  animation-name: grow-18;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(18) {
+  animation-name: shrink-18;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-19 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 940px;
+  }
+}
+@keyframes shrink-19 {
+  from {
+    display: block;
+    bottom: 940px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(19) {
+  animation-name: grow-19;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(19) {
+  animation-name: shrink-19;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+@keyframes grow-20 {
+  from {
+    display: none;
+    bottom: 36px;
+  }
+  to {
+    display: block;
+    bottom: 987px;
+  }
+}
+@keyframes shrink-20 {
+  from {
+    display: block;
+    bottom: 987px;
+  }
+  to {
+    display: none;
+    bottom: 36px;
+  }
+}
+.fab__filho:nth-last-child(20) {
+  animation-name: grow-20;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}
+.fab__filho--behiden:nth-last-child(20) {
+  animation-name: shrink-20;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  transform: scale(1);
+  right: 36px;
+  z-index: 99999;
+}

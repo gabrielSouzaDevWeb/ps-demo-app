@@ -1,0 +1,49 @@
+{
+  "permissao": [
+    {
+      "username": "55",
+      "id": 2,
+      "adm": "asdf"
+    },
+    {
+      "username": "4325",
+      "id": 4,
+      "adm": "asdf"
+    },
+    {
+      "username": "4325",
+      "id": 5,
+      "adm": "asdf"
+    },
+    {
+      "username": "4325",
+      "id": 6,
+      "adm": "asdf"
+    },
+    {
+      "username": "4325",
+      "id": 7,
+      "adm": "asdf"
+    },
+    {
+      "username": "4325",
+      "id": 8,
+      "adm": "asdf"
+    },
+    {
+      "username": "55555555",
+      "id": 9,
+      "adm": "asdf"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
